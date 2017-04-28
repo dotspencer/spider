@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "parse5": "^3.0.2",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "url-toolkit": "^2.1.1"
   }
 }
