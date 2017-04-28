@@ -31,7 +31,9 @@ function addIfSameHost(res, link, list){
   try{
     var u = new URL(link);
     if(u.host == res.request.uri.host){
-      list.push(link);
+      // Make sure protocol is same as requested page
+      u.protocol = res.request.uri.protocol;
+      list.push(u.href);
       return;
     }
   }
